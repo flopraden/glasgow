@@ -29,7 +29,7 @@ class GlasgowHardwareTarget(Module):
         elif revision in "C0":
             self.platform = GlasgowPlatformRevC0()
             self.sys_clk_freq = 48e6
-        elif revision in "C1":
+        elif revision in ("C1", "C2"):
             self.platform = GlasgowPlatformRevC1()
             self.sys_clk_freq = 48e6
         else:

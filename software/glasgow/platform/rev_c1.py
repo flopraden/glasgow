@@ -8,6 +8,7 @@ __all__ = ["GlasgowPlatformRevC1"]
 
 # In terms of FPGA I/O, the only change from revC0 to revC1 is the addition of a level shifter
 # on the sync port.
+# revC2 uses the exact same FPGA config as revC1, so this class is reused for it
 class GlasgowPlatformRevC1(GlasgowPlatformICE40):
     device      = "iCE40HX8K"
     package     = "BG121"

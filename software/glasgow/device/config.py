@@ -42,6 +42,10 @@ class GlasgowConfig:
 
     @staticmethod
     def encode_revision(string):
+        """
+        Encode revision string to revision byte as used in the EEPROM.
+        Make sure it matches the board revision enum in firmware/glasgow.h
+        """
         if re.match(r"^[A-Z][0-9]$", string):
             major, minor = string
             return ((ord(major) - ord("A") + 1) << 4) | (ord(minor) - ord("0"))

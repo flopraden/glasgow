@@ -11,10 +11,12 @@
 
 enum {
   // Board revisions
+  // Make sure this matches software/glasgow/device/config.py:encode_revision() and decode_revision()
   GLASGOW_REV_A  = 0x10,
   GLASGOW_REV_B  = 0x20,
   GLASGOW_REV_C0 = 0x30,
   GLASGOW_REV_C1 = 0x31,
+  GLASGOW_REV_C2 = 0x32,
 
   GLASGOW_REV_NA = 0xF9,
 };
